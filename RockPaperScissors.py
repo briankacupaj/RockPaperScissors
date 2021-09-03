@@ -13,8 +13,6 @@ def rpsBot():
         botTurn = 'scissors'
     elif botTurn == 3:
         botTurn = 'paper'
-    else:
-        print("brian youre stupid its still broken")
 
 def humanTurn():
     print("'Rock', 'Paper', or 'Scissors'?")
@@ -59,7 +57,6 @@ def humanTurn():
         elif botTurn == 'paper':
             print("Bot played 'Paper'")
             print("Tie.")
-
 
 def playGame():
     while True:
