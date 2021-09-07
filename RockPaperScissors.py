@@ -62,6 +62,7 @@ def playGame():
     while True:
         rpsBot()
         botTurn = rpsBot()
+        print("")
         print("The score is currently You:" + str(humanScore) + " - Computer:" + str(botScore) + ".")
         humanTurn()
         if humanScore == 4:
@@ -81,7 +82,8 @@ def playAgain():
         botScore = 0
         playGame()
     elif playAgain.lower() == 'no':
-        print("Okay.")
+        print("Okay, goodbye.")
+        exit()
     else:
         playAgain()
 
